@@ -8,7 +8,7 @@ TuesPechkin is a .NET Wrapper for the [wkhtmltopdf](https://github.com/wkhtmltop
 - [Azure Websites does not currently support the use of wkhtmltopdf.](http://social.msdn.microsoft.com/Forums/windowsazure/en-US/eb48e701-8c0b-4be3-b694-2e11cc6ff2e1/wkhtmltopdf-in-windows-azure?forum=windowsazurewebsitespreview)
 - It is not tested with any operating systems besides Windows.
 - [It is available as a *NuGet package* for your convenience.](https://www.nuget.org/packages/TuesPechkin/)
-- It is built and tested around wkhtmltopdf 0.12.2.
+- It is built and tested around wkhtmltopdf 0.12.3.
 - Even if you use the IIS-compatible method documented below, you may only use one converter/toolset instance per application pool/process. A workaround is being researched for a future version.
 
 ### wkhtmltox.dll 
@@ -16,7 +16,8 @@ The wkhtmltox.dll file and any dependencies it might have (for older versions, 0
 
 - TuesPechkin.Wkhtmltox.Win32
 - TuesPechkin.Wkhtmltox.Win64
- 
+- TuesPechkin.Wkhtmltox.AnyCPU
+
 _You must have Visual C++ 2013 runtime installed to use these packages. Otherwise, you will need to download the MingW build of wkhtmltopdf and its dependencies from their website and use that with the library._
 
 ### Reporting issues

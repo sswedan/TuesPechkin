@@ -20,7 +20,7 @@ namespace Html2PdfTestApp
         {
             Objects =
             {
-                new ObjectSettings { PageUrl = "www.google.com" }
+                new ObjectSettings { PageUrl = "http://habrahabr.ru/posts/top" }
             }
         };
 

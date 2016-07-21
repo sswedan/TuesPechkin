@@ -11,12 +11,13 @@ namespace TuesPechkin.TestWebApp.Controllers
             new StaticDeployment(
                 Path.Combine(
                     AppDomain.CurrentDomain.BaseDirectory,
-                    "../TuesPechkin.Tests/wk-ver/0.12.2"));
+                    "../TuesPechkin.Tests/wk-ver/0.12.3"));
 
         private static string randomPath = Path.Combine(
             Path.GetTempPath(),
             Guid.NewGuid().ToString(),
             "wkhtmltox.dll");
+		TempFolderDeployment tfd = new TempFolderDeployment();
 
         private static IConverter converter =
             new ThreadSafeConverter(
@@ -38,6 +39,7 @@ namespace TuesPechkin.TestWebApp.Controllers
         // GET: /Home/
         public ActionResult Index()
         {
+			ViewBag.tf = tfd.Path;
             return View();
         }
 
