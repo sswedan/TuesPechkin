@@ -1,5 +1,5 @@
 #TuesPechkin
-TuesPechkin is a .NET Wrapper for the [wkhtmltopdf](https://github.com/wkhtmltopdf/wkhtmltopdf) library. 
+TuesPechkin is a .NET Wrapper for the [wkhtmltopdf](https://github.com/wkhtmltopdf/wkhtmltopdf) library. This is AnyCPU fork of [TuesPechkin](https://github.com/tuespetre/TuesPechkin)
 
 ## Things to know
 
