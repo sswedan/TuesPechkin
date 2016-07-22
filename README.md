@@ -106,7 +106,7 @@ var document = new HtmlToPdfDocument
 IConverter converter =
     new StandardConverter(
         new PdfToolset(
-            new Win32EmbeddedDeployment(
+            new WinAnyCPUEmbeddedDeployment(
                 new TempFolderDeployment())));
 
 byte[] result = converter.Convert(document);
@@ -131,7 +131,7 @@ byte[] result = converter.Convert(document);
 IConverter converter =
     new ThreadSafeConverter(
         new RemotingToolset<PdfToolset>(
-            new Win32EmbeddedDeployment(
+            new WinAnyCPUEmbeddedDeployment(
                 new TempFolderDeployment())));
 
 // Keep the converter somewhere static, or as a singleton instance!
@@ -140,18 +140,7 @@ IConverter converter =
 byte[] result = converter.Convert(document);
 ```
 
-### Use the embedded library from the TuesPechkin.Wkhtmltox.Win64 NuGet package instead.
-```csharp
-IConverter converter =
-    new StandardConverter(
-        new PdfToolset(
-            new Win64EmbeddedDeployment(
-                new TempFolderDeployment())));
-
-byte[] result = converter.Convert(document);
-```
-
 License
 -------
 
-This work, "TuesPechkin", is a derivative of "Pechkin" by gmanny (Slava Kolobaev) used under the Creative Commons Attribution 3.0 license. This work is made available under the terms of the Creative Commons Attribution 3.0 license (viewable at http://creativecommons.org/licenses/by/3.0/) by tuespetre (Derek Gray.)
+This work, "TuesPechkin", is a fork of "TuesPechkin" by tuespetre (Derek Gray.) used under the Creative Commons Attribution 3.0 license. This work is made available under the terms of the Creative Commons Attribution 3.0 license (viewable at http://creativecommons.org/licenses/by/3.0/) by cratu (Dmitry Shumkin)
