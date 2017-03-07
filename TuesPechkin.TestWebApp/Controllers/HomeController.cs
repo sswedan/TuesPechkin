@@ -11,7 +11,7 @@ namespace TuesPechkin.TestWebApp.Controllers
             new StaticDeployment(
                 Path.Combine(
                     AppDomain.CurrentDomain.BaseDirectory,
-                    "../TuesPechkin.Tests/wk-ver/0.12.3"));
+                    "../TuesPechkin.Tests/wk-ver/0.12.4"));
 
         private static string randomPath = Path.Combine(
             Path.GetTempPath(),
