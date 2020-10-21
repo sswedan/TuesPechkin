@@ -22,15 +22,8 @@ using System.Runtime.InteropServices;
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 [assembly: Guid("215752e5-543a-4f72-b1f7-af3ab9a948e4")]
 
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Build and Revision Numbers 
-// by using the '*' as shown below:
-// [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("0.12.4.1")]
+//The Version number is used to load the wkhtmltox dll file so it must match the dll version of wkhtmltox
+//eg. this release will load the 0.12.6 wkhtmltox dll
+//Also you must have the correct wkhtmltox dll files in the wkhtmltox_32.dll.gz and wkhtmltox_64.dll.gz files
+[assembly: AssemblyVersion("0.12.6")]
 
